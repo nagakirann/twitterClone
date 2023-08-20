@@ -1,0 +1,78 @@
+//api 2
+
+post http://localhost:3000/login/
+Content-Type: application/json
+
+{
+  "username":"JoeBiden",
+  "password":"biden@123"
+}
+
+
+//token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjkyNTQwNzMxfQ.hIWPc1vbDpjASQb11PtZCCKflgT-dYrG8BuqCdHKO2k
+
+
+####
+# //api 1
+post http://localhost:3000/register/
+Content-Type: application/json
+
+{
+  "username": "adam_richard",
+  "password": "richard_567",
+  "name": "Adam Richard",
+  "gender": "male"
+}
+
+####
+//api 3
+get http://localhost:3000/user/tweet/feed/
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjkyNTQ3NTQ0fQ.5gq3YNxlQ3v5zeGUeauC5iQQsPpNf2kgXoKdoSFF_N4
+
+
+#####
+//api 4
+get http://localhost:3000/user/following/
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjkyNTQ3NTQ0fQ.5gq3YNxlQ3v5zeGUeauC5iQQsPpNf2kgXoKdoSFF_N4
+
+########
+//api 5
+get http://localhost:3000/user/followers/
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjkyNTQ3NTQ0fQ.5gq3YNxlQ3v5zeGUeauC5iQQsPpNf2kgXoKdoSFF_N4
+
+//api 6
+########
+get http://localhost:3000/tweets/3/
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjkyNTQwNzMxfQ.hIWPc1vbDpjASQb11PtZCCKflgT-dYrG8BuqCdHKO2k
+
+
+//api 7
+########
+get http://localhost:3000/tweets/likes/
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjkyNTQ3NTQ0fQ.5gq3YNxlQ3v5zeGUeauC5iQQsPpNf2kgXoKdoSFF_N4
+
+//api 8
+#######
+
+get http://localhost:3000/tweets/2/replies/
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjkyNTQ3NTQ0fQ.5gq3YNxlQ3v5zeGUeauC5iQQsPpNf2kgXoKdoSFF_N4
+
+
+//api 9
+######
+
+get http://localhost:3000/user/tweets/
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjkyNTQ3NTQ0fQ.5gq3YNxlQ3v5zeGUeauC5iQQsPpNf2kgXoKdoSFF_N4
+//api 10
+#####
+post http://localhost:3000/user/tweets/
+Content-Type: application/json
+
+{
+   "tweet": "The Mornings..."
+}
+
+//api 11
+######
+delete http://localhost:3000/tweets/2/
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjkyNTQ3NTQ0fQ.5gq3YNxlQ3v5zeGUeauC5iQQsPpNf2kgXoKdoSFF_N4
